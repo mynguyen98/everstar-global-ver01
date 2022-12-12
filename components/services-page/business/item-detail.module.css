@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.8rem;
+}
+.container svg {
+}
+.container h3 {
+  line-height: 2.8rem;
+}

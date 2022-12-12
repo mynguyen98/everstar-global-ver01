@@ -1,0 +1,56 @@
+.container {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.headerItem {
+  width: 25%;
+}
+.number {
+  border-bottom: 4px solid var(--brand-main-color);
+  position: relative;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.number h1 {
+  font-size: 4.4rem;
+  margin: 0;
+}
+.icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-1px, 50%);
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.content {
+  float: right;
+  width: 75%;
+  padding: 4.4rem 0 6.4rem 0;
+}
+.item {
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+  justify-content: flex-start;
+  column-gap: 7.4rem;
+}
+.item .itemDetail:first-child {
+  width: 33.33%;
+}
+.item .itemDetail:last-child {
+  width: 66.67%;
+}
+
+.itemDetail {
+  padding: 2.4rem 3.6rem;
+  border: 2px solid var(--brand-main-color);
+  border-radius: var(--radius);
+  background-color: var(--brand-color-item);
+}

@@ -1,0 +1,33 @@
+.section {
+  background-image: url("/images/service/business/about-us-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  background-color: #f8f9fa;
+  min-height: 80rem;
+}
+.header {
+  padding: 4.4rem 0 1.8rem 0;
+}
+.header h1 {
+  text-align: center;
+  color: var(--brand-second-color);
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  color: var(--text-disable-color);
+}
+.listItem li.active {
+  text-align: center;
+  padding-bottom: 1.2rem;
+  border-bottom: 4px solid var(--brand-main-color);
+}
+.detailItem {
+  padding: 3rem 0;
+}

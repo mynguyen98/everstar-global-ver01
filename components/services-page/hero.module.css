@@ -1,0 +1,14 @@
+.section {
+  background-image: url('/images/service/hero/service-hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6.4rem 0;
+}
+
+.heading {
+  font-size: 6.4rem;
+  color: var(--white-color);
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.main,
+.second,
+.third {
+  border: none;
+  background-color: var(--brand-main-color);
+  color: var(--white-color);
+  padding: var(--button-padding);
+  border-radius: var(--radius);
+  font-size: 2rem;
+  transition: var(--transition);
+  height: 6.2rem;
+}
+.second {
+  border: 2px solid #fff;
+}
+.third {
+  border: 2px solid var(--brand-main-color);
+  color: var(--brand-main-color);
+  background-color: var(--white-color);
+}
+.main:hover {
+  background-color: #aa6fa2;
+}
