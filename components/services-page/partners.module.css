@@ -1,0 +1,28 @@
+.section {
+  background-image: url('/images/service/partners-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.4rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 100%;
+}
+.header {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.container div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container div img {
+  width: 100%;
+}

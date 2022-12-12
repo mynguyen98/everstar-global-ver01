@@ -1,0 +1,17 @@
+.section {
+  background-image: url('/images/contact/contact-page-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70rem;
+}
+.section h1 {
+}
+.description {
+  text-align: center;
+  color: white;
+}
+.formContainer {
+  height: 50rem;
+  width: 100%;
+}

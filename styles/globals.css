@@ -18,11 +18,10 @@
     #1e0f2c 141.5%
   );
   --background-linear-item: linear-gradient(
-      180deg,
-      rgba(35, 55, 109, 0) 0%,
-      #23376d 100%
-    ),
-    url(.jpg), #ffffff;
+    180deg,
+    rgba(35, 55, 109, 0) 0%,
+    #23376d 100%
+  );
   --white-color: #fff;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -110,6 +109,13 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+.section-heading {
+  text-align: center;
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: white;
+  padding-top: 9.8rem;
+}
 .main-padding {
   padding-top: 11.2rem;
 }
@@ -153,6 +159,9 @@ h3 {
 }
 .clear {
   clear: both;
+}
+.section-padding {
+  padding: 4.4rem 0;
 }
 @media (prefers-color-scheme: dark) {
   html {

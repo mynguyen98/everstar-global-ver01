@@ -1,102 +1,3 @@
-// import icon
-// import LocalIcon from "../components/icons/service/local";
-import LocalIcon from '../public/icons/app-publish/local.svg'
-// import CreativeIcon from "../components/icons/service/creative";
-// import MarketAnalysisIcon from "../components/icons/service/market-analysis";
-// import MarketPlanIcon from "../components/icons/service/market-plan";
-// import MarketServiceIcon from "../components/icons/service/market-service";
-// import MediaIcon from "../components/icons/service/media";
-// import PerformanceIcon from "../components/icons/service/performance";
-// import StrategyIcon from "../components/icons/service/strategy";
-// export const businessData = {
-//   "en-US": [
-//     {
-//       sid: "app-developing",
-//       title: "App Developing",
-//       header: [
-//         "Original idea",
-//         "Business analysis",
-//         "Development service",
-//         "Maintenance & update service",
-//       ],
-//       content: [
-//         [
-//           "Competent dev team consisted of iOS & AOS native developer, AI & Backend developer, crypto currency developer",
-//         ],
-//         ["Function list", "BM model"],
-//         [
-//           "Development timeline and service plan",
-//           "In cooperate latest tech-stack",
-//         ],
-//       ],
-//     },
-//     {
-//       sid: "market-analysis",
-//       title: "Market analysis",
-//       content: [
-//         {
-//           title: "Market analysis",
-//           icon: "",
-//           description: ["Market & Trend Research", "Market suitability"],
-//         },
-//         {
-//           title: "Market analysis",
-//           icon: "",
-//           description: ["Market & Trend Research", "Market suitability"],
-//         },
-//         {
-//           title: "Market analysis",
-//           icon: "",
-//           description: ["Market & Trend Research", "Market suitability"],
-//         },
-//       ],
-//     },
-//   ],
-//   "kr-KR": [
-//     {
-//       sid: "app-developing",
-//       title: "App Developing",
-//       header: [
-//         "Original idea",
-//         "Business analysis",
-//         "Development service",
-//         "Maintenance & update service",
-//       ],
-//       content: [
-//         [
-//           "Competent dev team consisted of iOS & AOS native developer, AI & Backend developer, crypto currency developer",
-//         ],
-//         ["Function list", "BM model"],
-//         [
-//           "Development timeline and service plan",
-//           "In cooperate latest tech-stack",
-//         ],
-//       ],
-//     },
-//     {
-//       sid: "market-analysis",
-//       title: "Market analysis",
-//       content: [
-//         {
-//           title: "Market analysis",
-//           icon: "",
-//           description: ["Market & Trend Research", "Market suitability"],
-//         },
-//         {
-//           title: "Market analysis",
-//           icon: "",
-//           description: ["Market & Trend Research", "Market suitability"],
-//         },
-//         {
-//           title: "Market analysis",
-//           icon: "",
-//           description: ["Market & Trend Research", "Market suitability"],
-//         },
-//       ],
-//     },
-//   ],
-// };
-
 export const business = [
   {
     sid: 'app-developing',
@@ -139,22 +40,22 @@ export const business = [
     sid: 'app-publishing',
     'kr-KR': [
       {
-        icon: '/',
+        icon: '/images/service/business/icons/market-analyze.png',
         title: '시장 분석',
         content: ['시장 조사 및 최신 동향 조사', '시장 적합성 판단'],
       },
       {
-        icon: '/',
+        icon: '/images/service/business/icons/market-plan.png',
         title: '시장 진출 계획 수립',
         content: ['비즈니스 분석', '마케팅 계획 수립'],
       },
       {
-        icon: '/',
+        icon: '/images/service/business/icons/local.png',
         title: '현지화 작업',
         content: ['필요 허가서 획득', '현지화 작업 (언어, 컨텐츠 등)'],
       },
       {
-        icon: '/',
+        icon: '/images/service/business/icons/market-service.png',
         title: '서비스 시작',
         content: ['현지 결제 모듈 적용', '고객 서비스 운용'],
       },
@@ -181,5 +82,126 @@ export const business = [
         content: ['Local payment integration', 'Customer service'],
       },
     ],
+  },
+  {
+    sid: 'game-publishing',
+    'en-US': [
+      {
+        title: 'Publishing',
+        description: 'Provide G1 license to publishing game in Vietnam',
+        image: '/images/service/business/publish-provide.png',
+        content: [
+          'Register for game publishing license in Vietnam',
+          'Localization service',
+          'Local payment intergration service',
+          'Customer service',
+        ],
+      },
+      {
+        title: 'Game marketing',
+        description:
+          'Performance game marketing campaign and game marketing analysis service',
+        image: '/images/service/business/game-marketing.png',
+        content: [
+          'Research and suggest marketing campaign for Vietnam market',
+          'Operate marketing campaign for game launch, updates, ...',
+          'Create contents for game marketing campaign to suit the Vietnamese users',
+        ],
+      },
+      {
+        title: 'R&D service',
+        description: 'Provide insight information about Vietnam game market',
+        image: '/images/service/business/rd-service.png',
+        content: [
+          'Research the insight of Vietnam game market',
+          'Analyze game’s suitablity for launching in Vietnam market',
+        ],
+      },
+    ],
+    'kr-KR': [
+      {
+        title: '퍼블리싱',
+        description:
+          '베트남에서 게임을 퍼블리싱하기 위해 필요한 G1 라이센스 보유',
+        image: '/images/service/business/publish-provide.png',
+        content: [
+          '베트남 게임 퍼블리싱 라이센스 등록',
+          'Localization 작업',
+          '현지 결제 모듈 연결',
+          '고객 서비스',
+        ],
+      },
+      {
+        title: 'Game marketing',
+        description: '퍼포먼스 게임 마케팅 및 마케팅 분석 서비스 제공',
+        image: '/images/service/business/game-marketing.png',
+        content: [
+          '베트남 시장 진출을 위한 마케팅 전략 조사 & 제안',
+          '게임 출시, 업데이트 등에 맞추어 전략에 맞는 마케팅 실행',
+          '베트남 현지화에 맞추어 게임 마케팅 켐페인 콘텐츠 제작',
+        ],
+      },
+      {
+        title: 'R&D service',
+        description: '베트남 게임 시장에 대한 인사이트 제공t',
+        image: '/images/service/business/rd-service.png',
+        content: [
+          '베트남 게임 시장 조사 및 분석',
+          ' 게임의 시장 적합성 판단 및 최적화된 시장 진출 전략 제공',
+        ],
+      },
+    ],
+  },
+  {
+    sid: 'marketing',
+    'kr-KR': [
+      {
+        icon: '/images/service/business/icons/market-analyze.png',
+        title: '시장 분석',
+        content: ['시장 조사 및 최신 동향 조사', '시장 적합성 판단'],
+      },
+      {
+        icon: '/images/service/business/icons/market-plan.png',
+        title: '시장 진출 계획 수립',
+        content: ['비즈니스 분석', '마케팅 계획 수립'],
+      },
+      {
+        icon: '/images/service/business/icons/local.png',
+        title: '현지화 작업',
+        content: ['필요 허가서 획득', '현지화 작업 (언어, 컨텐츠 등)'],
+      },
+      {
+        icon: '/images/service/business/icons/market-service.png',
+        title: '서비스 시작',
+        content: ['현지 결제 모듈 적용', '고객 서비스 운용'],
+      },
+    ],
+    'en-US': [
+      {
+        icon: '/images/service/business/icons/market-analyze.png',
+        title: 'Market analysis',
+        content: ['Market & Trend Research', 'Market suitability'],
+      },
+      {
+        icon: '/images/service/business/icons/market-plan.png',
+        title: 'Market penetration plan',
+        content: ['Business analysis', 'Marketing campaign plan'],
+      },
+      {
+        icon: '/images/service/business/icons/local.png',
+        title: 'Localization & Local permit documents',
+        content: ['Vietnamese localization', 'Marketing campaign plan'],
+      },
+      {
+        icon: '/images/service/business/icons/market-service.png',
+        title: 'Market service',
+        content: ['Local payment integration', 'Customer service'],
+      },
+    ],
+  },
+  {
+    sid: 'blockchain',
+    'en-US': [],
+    'kr-KR': [],
   },
 ]

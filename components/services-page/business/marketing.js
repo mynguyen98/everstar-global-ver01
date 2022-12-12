@@ -1,7 +1,15 @@
-export default function Marketing() {
+import ItemDetailApp from './item-detail-app'
+import classes from './marketing.module.css'
+export default function Marketing({ business }) {
   return (
     <div>
-      <h1>Marketing Solution</h1>
+      <div className={classes.listItem}>
+        {business.map((businessItem, index) => (
+          <div>
+            <ItemDetailApp item={businessItem} key={index} />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

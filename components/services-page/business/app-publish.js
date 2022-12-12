@@ -6,7 +6,10 @@ export default function AppPublish({ business }) {
     <div>
       <div className={classes.listItem}>
         {business.map((businessItem, index) => (
-          <ItemDetailApp item={businessItem} key={index} />
+          <div className={classes.wrapper}>
+            <ItemDetailApp item={businessItem} key={index} />
+            <h1 className={classes.number}>0{index + 1}</h1>
+          </div>
         ))}
       </div>
     </div>

@@ -1,11 +1,11 @@
 .section {
-  background-image: url("/images/service/business/about-us-bg.png");
+  background-image: url('/images/service/business/about-us-bg.png');
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
+  min-height: 80rem;
 }
 .container {
   background-color: #f8f9fa;
-  min-height: 80rem;
 }
 .header {
   padding: 4.4rem 0 1.8rem 0;
@@ -23,9 +23,12 @@
   column-gap: 3rem;
   color: var(--text-disable-color);
 }
-.listItem li.active {
+.listItem li {
   text-align: center;
   padding-bottom: 1.2rem;
+  border-bottom: 4px solid #f8f9fa;
+}
+.listItem li.active {
   border-bottom: 4px solid var(--brand-main-color);
 }
 .detailItem {

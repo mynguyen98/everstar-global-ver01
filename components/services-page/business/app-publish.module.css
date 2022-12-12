@@ -3,3 +3,16 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2.4rem;
 }
+.wrapper {
+  position: relative;
+}
+.number {
+  position: absolute;
+  bottom: 8%;
+  text-align: center;
+  font-size: 16.4rem;
+  color: var(--brand-main-color);
+  opacity: 0.2;
+  width: 100%;
+  font-weight: 600;
+}

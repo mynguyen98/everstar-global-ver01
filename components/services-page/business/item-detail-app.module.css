@@ -1,0 +1,13 @@
+.container {
+  background-color: white;
+  padding: 4.4rem 3rem;
+  height: 50rem;
+  border-radius: 8px;
+}
+.icon,
+.header {
+  padding-bottom: 2rem;
+}
+.container li {
+  padding-bottom: 2rem;
+}

@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-image: url('/images/service/contactus-bg.png');
+  padding: 4.4rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.section {
+  padding: 4.4rem 0;
+}
+.container .description {
+  width: 90%;
+}
+.container p {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+.button {
+  color: var(--brand-main-color);
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button a {
+  padding: 1.6rem 2.4rem;
+  background-color: white;
+  border-radius: 8px;
+}

@@ -1,16 +1,21 @@
-import classes from "./business.module.css";
-import { footerBusinessContent } from "../../../data/constant";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import classes from './business.module.css'
+import { footerBusinessContent } from '../../../data/constant'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 // import component
-import AppDevelop from "./app-develop";
-import AppPublish from "./app-publish";
+import AppDevelop from './app-develop'
+import AppPublish from './app-publish'
+import GamePublish from './game-publish'
+import Marketing from './marketing'
+import Blockchain from './blockchain'
+
+////////////////////////////////////////////////////////
 export default function Business({ business, sid }) {
-  const { locale } = useRouter();
-  console.log(business, sid);
-  const businessTab = footerBusinessContent[locale].services.listItem;
-  console.log(businessTab);
+  const { locale } = useRouter()
+  console.log(business, sid)
+  const businessTab = footerBusinessContent[locale].services.listItem
+  console.log(businessTab)
   return (
     <section className={classes.container}>
       <div className={`${classes.section} section-center`}>
@@ -21,22 +26,29 @@ export default function Business({ business, sid }) {
           <div>
             <ul className={classes.listItem}>
               {businessTab.map((tab, index) => {
+                console.log(tab)
                 return (
-                  <li key={index} className={classes.active}>
+                  <li
+                    key={index}
+                    className={tab.sid === sid ? classes.active : ''}
+                  >
                     <Link href={tab.link} scroll={false}>
                       {tab.title}
                     </Link>
                   </li>
-                );
+                )
               })}
             </ul>
           </div>
         </div>
         <div className={classes.detailItem}>
-          {sid === "app-developing" ? <AppDevelop business={business} /> : ""}
-          {sid === "app-publishing" ? <AppPublish business={business} /> : ""}
+          {sid === 'app-developing' ? <AppDevelop business={business} /> : ''}
+          {sid === 'app-publishing' ? <AppPublish business={business} /> : ''}
+          {sid === 'game-publishing' ? <GamePublish business={business} /> : ''}
+          {sid === 'marketing' ? <Marketing business={business} /> : ''}
+          {sid === 'blockchain' ? <Blockchain business={business} /> : ''}
         </div>
       </div>
     </section>
-  );
+  )
 }
