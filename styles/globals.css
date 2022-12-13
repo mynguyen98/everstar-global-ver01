@@ -30,6 +30,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --shadow-basic: rgba(0, 0, 0, 0.1);
+  --shadow-item: 0px 0px 20px rgba(0, 0, 0, 0.1);
   --max-width: 1320px;
   --padding-small: 8px;
   --pading-medium: 12px;
@@ -114,7 +115,8 @@ h3 {
   font-size: 6.4rem;
   font-weight: 600;
   color: white;
-  padding-top: 9.8rem;
+  padding: 9.8rem;
+  margin: 0;
 }
 .main-padding {
   padding-top: 11.2rem;

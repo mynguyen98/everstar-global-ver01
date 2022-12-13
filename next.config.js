@@ -8,20 +8,20 @@ module.exports = {
     /**
      * Provide the locales you want to support in your application
      */
-    locales: ['en-US', 'kr-KR'],
+    locales: ['en', 'kr'],
     /**
      * This is the default locale you want to be used when visiting
      * a non-locale prefixed path.
      */
-    defaultLocale: 'en-US',
+    defaultLocale: 'en',
     domains: [
       {
-        domain: '/.com',
-        defaultLocale: 'en-US',
+        domain: 'everstarglobal.local.en',
+        defaultLocale: 'en',
       },
       {
-        domain: '/.kr',
-        defaultLocale: 'kr-KR',
+        domain: 'everstarglobal.local.kr',
+        defaultLocale: 'kr',
       },
       // {
       //   domain: 'example.fr',

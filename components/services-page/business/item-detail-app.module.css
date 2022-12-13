@@ -3,6 +3,7 @@
   padding: 4.4rem 3rem;
   height: 50rem;
   border-radius: 8px;
+  box-shadow: var(--shadow-item);
 }
 .icon,
 .header {
@@ -10,4 +11,7 @@
 }
 .container li {
   padding-bottom: 2rem;
+}
+.item {
+  width: 100%;
 }

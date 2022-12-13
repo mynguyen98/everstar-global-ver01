@@ -20,43 +20,6 @@ export default function MainFooter() {
           <p>EVERSTAR GLOBAL JOINT STOCK COMPANY</p>
         </div>
         <div className={classes.content}>
-          {/* <div>
-            <h2>{company.title}</h2>
-            <ul>
-              {company.listItem.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <Link href='/'>{item.title}</Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-          <div>
-            <h2>{services.title}</h2>
-            <ul>
-              {services.listItem.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <Link href={item.link}>{item.title}</Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </div> */}
-          {/* <div>
-            <h2>{contact.title}</h2>
-            <ul>
-              {contact.listItem.map((item, index) => {
-                return (
-                  <li key={index}>
-                    {item.icon}
-                    <Link href='/'>{item.title}</Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </div> */}
           <FooterContent content={company} isLink={true} />
           <FooterContent content={services} isLink={true} />
           <FooterContent content={contact} isLink={false} />

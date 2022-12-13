@@ -1,0 +1,14 @@
+.tags {
+  display: flex;
+  text-align: left;
+}
+.tags div {
+  padding: 1rem 2.4rem;
+  background-color: white;
+  border-radius: 3rem;
+  margin-left: 1rem;
+  color: var(--text-disable-color);
+}
+.desc {
+  margin-bottom: 1.2rem;
+}

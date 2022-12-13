@@ -1,7 +1,7 @@
 export const business = [
   {
     sid: 'app-developing',
-    'en-US': {
+    en: {
       title: 'App Developing',
       header: [
         'Original idea',
@@ -22,7 +22,7 @@ export const business = [
         ],
       ],
     },
-    'kr-KR': {
+    kr: {
       title: 'App Developing Korean',
       header: ['사업 아이디어', '사업 분석', '앱 개발', '유지보수 & 업데이트'],
       content: [
@@ -38,7 +38,7 @@ export const business = [
   },
   {
     sid: 'app-publishing',
-    'kr-KR': [
+    kr: [
       {
         icon: '/images/service/business/icons/market-analyze.png',
         title: '시장 분석',
@@ -60,7 +60,7 @@ export const business = [
         content: ['현지 결제 모듈 적용', '고객 서비스 운용'],
       },
     ],
-    'en-US': [
+    en: [
       {
         icon: '/images/service/business/icons/market-analyze.png',
         title: 'Market analysis',
@@ -85,7 +85,7 @@ export const business = [
   },
   {
     sid: 'game-publishing',
-    'en-US': [
+    en: [
       {
         title: 'Publishing',
         description: 'Provide G1 license to publishing game in Vietnam',
@@ -118,7 +118,7 @@ export const business = [
         ],
       },
     ],
-    'kr-KR': [
+    kr: [
       {
         title: '퍼블리싱',
         description:
@@ -154,7 +154,7 @@ export const business = [
   },
   {
     sid: 'marketing',
-    'kr-KR': [
+    kr: [
       {
         icon: '/images/service/business/icons/market-analyze.png',
         title: '시장 분석',
@@ -176,7 +176,7 @@ export const business = [
         content: ['현지 결제 모듈 적용', '고객 서비스 운용'],
       },
     ],
-    'en-US': [
+    en: [
       {
         icon: '/images/service/business/icons/market-analyze.png',
         title: 'Market analysis',
@@ -201,7 +201,7 @@ export const business = [
   },
   {
     sid: 'blockchain',
-    'en-US': [],
-    'kr-KR': [],
+    en: [],
+    kr: [],
   },
 ]

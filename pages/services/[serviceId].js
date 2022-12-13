@@ -38,11 +38,11 @@ export async function getStaticPaths() {
   business.map((item) => {
     paths.push({
       params: { serviceId: item.sid },
-      locale: 'en-US',
+      locale: 'en',
     })
     paths.push({
       params: { serviceId: item.sid },
-      locale: 'kr-KR',
+      locale: 'kr',
     })
   })
   return {

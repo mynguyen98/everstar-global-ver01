@@ -1,7 +1,9 @@
+import PortfolioDetail from '../components/portfolio-page'
+
 export default function PortfolioPage() {
   return (
     <div>
-      <h1>Portfolio Page</h1>
+      <PortfolioDetail />
     </div>
   )
 }

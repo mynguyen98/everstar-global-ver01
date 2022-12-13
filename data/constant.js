@@ -9,7 +9,7 @@ import AddressIcon from '../components/icons/icons/address-icon'
 import EmailIcon from '../components/icons/icons/email-icon'
 
 export const businessHomeData = {
-  'en-US': [
+  en: [
     {
       id: 1,
       title: 'App Developing',
@@ -92,7 +92,7 @@ export const businessHomeData = {
       ],
     },
   ],
-  'kr-KR': [
+  kr: [
     {
       id: 1,
       title: '어플리케이션 개발',
@@ -179,14 +179,14 @@ export const businessHomeData = {
 }
 
 export const heroContent = {
-  'en-US': {
+  en: {
     description:
       'We combine unique and creative ideas from Korea and talented members from Vietnam together and make it into the real.',
     btnLearn: 'Learn more',
     btnDown: 'Download Company IR',
     imageUrl: '/images/home/hero/hero-des.png',
   },
-  'kr-KR': {
+  kr: {
     description:
       '우리는 한국의 창의적인 아이디어를 베트남의 재능있는 사람들과 현실로 만들어갑니다.',
     btnLearn: '사업 영역',
@@ -196,7 +196,7 @@ export const heroContent = {
 }
 
 export const footerBusinessContent = {
-  'en-US': {
+  en: {
     company: {
       title: 'Company',
       listItem: [
@@ -253,7 +253,7 @@ export const footerBusinessContent = {
       ],
     },
   },
-  'kr-KR': {
+  kr: {
     company: {
       title: 'Company',
       listItem: [
@@ -309,7 +309,7 @@ export const footerBusinessContent = {
   },
 }
 export const serviceFeatured = {
-  'en-US': [
+  en: [
     {
       id: 0,
       image: '/images/service/features/Artboard-1.png',
@@ -327,7 +327,7 @@ export const serviceFeatured = {
       image: '/images/service/features/Artboard-4.png',
     },
   ],
-  'kr-KR': [
+  kr: [
     {
       id: 0,
       image: '/images/service/features/Artboard-kr-1.png',
@@ -360,11 +360,11 @@ export const partnerImgs = [
   '/images/service/logo-partners/logo-game-solution.png',
 ]
 export const contactBannerData = {
-  'en-US': {
+  en: {
     title: 'Contact us',
     description: 'FOR ANY PARTNERSHIP PROPOSAL, FEEL FREE TO CONTACT US.',
   },
-  'kr-KR': {
+  kr: {
     title: '사업 제휴 문의',
     description:
       '(주)에버스타 글로벌은 서비스 연계, 마케팅 제휴 등 다양한 분야에서 한국 기업의 베트남 진출을 도와드리고 있습니다.',
