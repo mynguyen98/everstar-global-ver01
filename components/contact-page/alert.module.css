@@ -1,0 +1,7 @@
+.required {
+  color: red;
+}
+.alert {
+  display: flex;
+  align-items: center;
+}

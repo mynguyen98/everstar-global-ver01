@@ -1,5 +1,5 @@
 .section {
-  background-image: url('/images/contact/contact-page-bg.png');
+  background-image: url("/images/contact/contact-page-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,6 +12,6 @@
   color: white;
 }
 .formContainer {
-  height: 50rem;
   width: 100%;
+  background-color: rgba(242, 242, 242, 1);
 }
