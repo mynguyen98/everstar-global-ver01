@@ -2,6 +2,7 @@ import classes from './index.module.css'
 import { cultureData } from '../../data/culture-data'
 import DeatilDesc from './detail-desc'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 export default function CultureDetail() {
   const { locale } = useRouter()
   const data = cultureData[locale]
@@ -13,12 +14,16 @@ export default function CultureDetail() {
       <section className={classes.container}>
         <div className='section-center'>
           {data.map((item, index) => {
-            // if (index % 2 === 0)
             return (
-              <div className={classes.itemWrapper}>
+              <div className={classes.itemWrapper} key={index}>
                 {index % 2 === 0 ? (
                   <div className={classes.imageContainer}>
-                    <img src={item.images} alt='image culture description' />
+                    <Image
+                      src={item.images}
+                      alt='image culture description'
+                      width={560}
+                      height={320}
+                    />
                   </div>
                 ) : (
                   ''
@@ -30,7 +35,12 @@ export default function CultureDetail() {
                 />
                 {index % 2 !== 0 ? (
                   <div className={classes.imageContainer}>
-                    <img src={item.images} alt='image culture description' />
+                    <Image
+                      src={item.images}
+                      alt='image culture description'
+                      width={560}
+                      height={300}
+                    />
                   </div>
                 ) : (
                   ''

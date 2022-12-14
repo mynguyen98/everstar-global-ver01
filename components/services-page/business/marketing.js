@@ -5,7 +5,7 @@ export default function Marketing({ business }) {
     <div>
       <div className={classes.listItem}>
         {business.map((businessItem, index) => (
-          <div>
+          <div key={index}>
             <ItemDetailApp item={businessItem} key={index} />
           </div>
         ))}

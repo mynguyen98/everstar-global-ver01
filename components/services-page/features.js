@@ -4,6 +4,7 @@ import classes from './features.module.css'
 import NextSlideIcon from '../icons/icons/next-slide-icon'
 import PrevSlideIcon from '../icons/icons/prev-slide-icon'
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 //import hook
 
 export default function Features() {
@@ -12,10 +13,8 @@ export default function Features() {
   const containerImg = useRef()
   const container = useRef()
   const listImage = serviceFeatured[locale]
-  console.log(listImage)
   const itemLength = listImage.length
   const nextItem = () => {
-    console.log('running')
     setValue((prev) => {
       if (prev + 1 === itemLength) {
         return 0
@@ -32,12 +31,9 @@ export default function Features() {
     })
   }
   useEffect(() => {
-    console.log(containerImg)
     const imgWidth = containerImg.current.offsetWidth
-    console.log(imgWidth * value)
     container.current.style.transform = `translateX(${-imgWidth * value}px)`
   }, [value])
-  console.log(value)
   return (
     <section className={`section-center ${classes.section}`}>
       <div className={classes.nextIcon} onClick={nextItem}>
@@ -47,6 +43,7 @@ export default function Features() {
         <PrevSlideIcon />
       </div>
       <div className={`${classes.content} section-padding`}>
+        <h1 className='heading-content'>CORE COMPETENCY</h1>
         <div className={classes.container} ref={container}>
           {listImage.map((item, index) => {
             return (
@@ -57,7 +54,12 @@ export default function Features() {
                 }`}
                 ref={containerImg}
               >
-                <img src={item.image} alt='service feature' />
+                <Image
+                  src={item.image}
+                  alt='service feature'
+                  width={1000}
+                  height={500}
+                />
               </div>
             )
           })}

@@ -5,34 +5,19 @@
 module.exports = {
   reactStrictMode: true,
   i18n: {
-    /**
-     * Provide the locales you want to support in your application
-     */
-    locales: ["en-US", "kr-KR"],
-    // localeDetection: false,
-    /**
-     * This is the default locale you want to be used when visiting
-     * a non-locale prefixed path.
-     */
-    defaultLocale: "en-US",
+    locales: ['en-US', 'kr-KR'],
+    defaultLocale: 'en-US',
     domains: [
       {
-        domain: "everstar.en",
-        defaultLocale: "en-US",
+        domain: 'everstarglobal.local.en:3000',
+        defaultLocale: 'en-US',
+        http: true,
       },
       {
-        domain: "everstar.kr",
-        defaultLocale: "kr-KR",
+        domain: 'everstarglobal.local.kr:3000',
+        defaultLocale: 'kr-KR',
+        http: true,
       },
-      // {
-      //   domain: 'example.fr',
-      //   defaultLocale: '',
-      //   // an optional http field can also be used to test
-      //   // locale domains locally with http instead of https
-      //   http: true,
-      // },
     ],
   },
-};
-
-// module.exports = nextConfig
+}

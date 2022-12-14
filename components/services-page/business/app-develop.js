@@ -4,7 +4,6 @@ import ListIcon from '../../icons/icons/list-icon'
 import ItemDetail from './item-detail'
 export default function AppDevelop({ business }) {
   const { content, header } = business
-  console.log(content)
   return (
     <div className={classes.container}>
       <div className={classes.header}>
@@ -35,7 +34,7 @@ export default function AppDevelop({ business }) {
               </div>
             )
           return (
-            <div className={classes.itemContainer}>
+            <div className={classes.itemContainer} key={index}>
               <div className={classes.item}>
                 {item.map((details, index) => {
                   return (

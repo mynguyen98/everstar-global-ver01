@@ -32,10 +32,7 @@
 }
 .imgContainer img {
   width: 90%;
-  animation-name: rotate;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  object-fit: contain;
 }
 /* @keyframes rotate {
   from {

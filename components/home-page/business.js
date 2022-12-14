@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import { businessHomeData } from '../../data/constant'
 import classes from './business.module.css'
 import { useState, useRef, useEffect } from 'react'
+import Image from 'next/image'
 export default function HomeBusiness() {
   const router = useRouter()
   // const [feature, setFeature] = useState({})
@@ -52,7 +53,12 @@ export default function HomeBusiness() {
             return (
               <div key={index} className={classes.featureItem}>
                 <div className={classes.feature}>
-                  <img src={feature.image} alt='feature' />
+                  <Image
+                    src={feature.image}
+                    alt='feature'
+                    width={180}
+                    height={180}
+                  />
                   <p>{feature.description}</p>
                 </div>
               </div>

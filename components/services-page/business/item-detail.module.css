@@ -14,7 +14,12 @@
   left: 0;
   transform: rotate(45deg) translate(50%);
 }
-.container h3 {
+.container h3,
+.container h2 {
   margin: 0;
   margin-left: 3.6rem;
+}
+.container h2 {
+  color: var(--brand-main-color);
+  line-height: 2rem;
 }

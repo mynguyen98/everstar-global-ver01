@@ -13,9 +13,7 @@ import Blockchain from './blockchain'
 ////////////////////////////////////////////////////////
 export default function Business({ business, sid }) {
   const { locale } = useRouter()
-  console.log(business, sid)
   const businessTab = footerBusinessContent[locale].services.listItem
-  console.log(businessTab)
   return (
     <section className={classes.container}>
       <div className={`${classes.section} section-center`}>

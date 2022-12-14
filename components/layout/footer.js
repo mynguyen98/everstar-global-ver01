@@ -8,7 +8,6 @@ export default function MainFooter() {
   const { locale } = useRouter()
   const footerData = footerBusinessContent[locale]
   const { company, services, contact } = footerData
-  console.log(company, services, contact)
   // console.log(locale)
   return (
     <section className={classes.section}>

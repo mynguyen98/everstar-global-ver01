@@ -31,7 +31,7 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --shadow-basic: rgba(0, 0, 0, 0.1);
   --shadow-item: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  --max-width: 1320px;
+  --max-width: 1200px;
   --padding-small: 8px;
   --pading-medium: 12px;
   --fixed-width: 620px;
@@ -128,7 +128,12 @@ h3 {
   margin: 0 auto;
   max-width: var(--max-width);
 }
-
+.heading-content {
+  text-align: center;
+  color: var(--brand-second-color);
+  font-size: 4.4rem;
+  font-weight: 600;
+}
 .flex-item {
   display: flex;
   justify-content: space-between;
@@ -185,4 +190,5 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
+  row-gap: 3rem;
 }

@@ -1,7 +1,6 @@
 import classes from './game-publish.module.css'
 import Button from '../../ui/button'
 export default function GamePublish({ business }) {
-  console.log(business)
   return (
     <div className={classes.container}>
       {business.map((item, index) => {

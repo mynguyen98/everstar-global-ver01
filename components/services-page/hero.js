@@ -1,5 +1,5 @@
 import classes from './hero.module.css'
-import Business from './business/business'
+// import Business from './business/business'
 export default function HeroPage() {
   return (
     <section className={classes.section}>

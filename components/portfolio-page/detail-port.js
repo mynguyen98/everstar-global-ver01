@@ -1,7 +1,6 @@
 import classes from './detail-port.module.css'
 
 export default function DetailPort({ desc, link, title }) {
-  console.log(desc, link, title)
   return (
     <div style={{ textAlign: 'left' }}>
       <h1>{title}</h1>

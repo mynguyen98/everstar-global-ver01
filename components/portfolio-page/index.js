@@ -1,11 +1,11 @@
 import DetailPort from './detail-port'
 import { useRouter } from 'next/router'
 import { portfolioData } from '../../data/portfolio-data'
+import Image from 'next/image'
 
 import classes from './index.module.css'
 export default function PortfolioDetail() {
-  const { locale, domain } = useRouter()
-  console.log(useRouter())
+  const { locale } = useRouter()
   const data = portfolioData[locale]
 
   return (
@@ -36,7 +36,12 @@ export default function PortfolioDetail() {
                     className={classes.detail}
                   />
                   <div className={classes.image}>
-                    <img src={item.image} alt='portfolio image' />
+                    <Image
+                      src={item.image}
+                      alt='portfolio image'
+                      width={220}
+                      height={420}
+                    />
                   </div>
                 </div>
               </div>

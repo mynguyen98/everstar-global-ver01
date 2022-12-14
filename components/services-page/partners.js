@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { partnerImgs } from '../../data/constant'
 import classes from './partners.module.css'
+import Image from 'next/image'
 export default function Partners() {
   const { locale } = useRouter()
   let header = ''
@@ -15,7 +16,7 @@ export default function Partners() {
           {partnerImgs.map((img, index) => {
             return (
               <div key={index}>
-                <img src={img} alt='' />
+                <Image src={img} alt='' width={300} height={300} />
               </div>
             )
           })}

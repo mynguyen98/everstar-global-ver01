@@ -54,8 +54,11 @@
   align-items: center;
   justify-content: center;
   transition: var(--transition);
+  max-width: 100%;
 }
 .feature img {
+  width: 80%;
+  object-fit: contain;
 }
 .feature p {
   width: 90%;

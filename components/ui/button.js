@@ -17,7 +17,7 @@ export default function Button(props) {
   }
   if (props.type === 'third') {
     return (
-      <a href='#'>
+      <a href={props.hrefLink} download='companyIR'>
         <button className={classes.third}>{props.children}</button>
       </a>
     )

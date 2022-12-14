@@ -8,16 +8,18 @@
 .container {
   display: flex;
   width: 100%;
-  /* transition: all 0.5s linear; */
 }
 .imageContainer {
   transition: all 0.5s linear;
   opacity: 0;
   min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .imageContainer img {
-  object-fit: top center;
-  width: 100%;
+  object-fit: contain;
+  width: 85%;
 }
 .content {
   position: relative;
@@ -31,16 +33,13 @@
   height: 20rem;
   display: flex;
   align-items: center;
-  width: 100px;
   justify-content: center;
   z-index: 4;
 }
 .nextIcon {
-  right: -10%;
+  right: 0px;
 }
-.prevIcon {
-  left: -10%;
-}
+
 .dots {
   display: flex;
   align-items: center;
@@ -56,9 +55,6 @@
   cursor: pointer;
   transition: var(--transition);
 }
-/* .container div {
-  opacity: 0;
-} */
 .active {
   opacity: 1;
 }
