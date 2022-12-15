@@ -13,7 +13,7 @@ module.exports = {
         defaultLocale: "en-US",
       },
       {
-        domain: "https://everstar-global-en.vercel.app",
+        domain: "https://everstar-global-kr.vercel.app",
         defaultLocale: "kr-KR",
       },
     ],
