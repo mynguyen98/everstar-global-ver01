@@ -9,11 +9,11 @@ module.exports = {
     defaultLocale: "en-US",
     domains: [
       {
-        domain: "https://everstar-global-en.vercel.app",
+        domain: "everstar-global-en.vercel.app",
         defaultLocale: "en-US",
       },
       {
-        domain: "https://everstar-global-kr.vercel.app",
+        domain: "everstar-global-kr.vercel.app",
         defaultLocale: "kr-KR",
       },
     ],
