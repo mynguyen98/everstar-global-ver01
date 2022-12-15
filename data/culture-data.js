@@ -1,5 +1,5 @@
 export const cultureData = {
-  "en-US": [
+  en: [
     {
       title: "Friendly and Optimistic",
       content: [
@@ -37,7 +37,7 @@ export const cultureData = {
       images: "/images/culture/content/culture-4.png",
     },
   ],
-  "kr-KR": [
+  ko: [
     {
       title: "Friendly and Optimistic",
       content: [

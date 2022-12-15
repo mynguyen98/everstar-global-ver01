@@ -5,16 +5,16 @@
 module.exports = {
   reactStrictMode: true,
   i18n: {
-    locales: ["en-US", "kr-KR"],
-    defaultLocale: "kr-KR",
+    locales: ["en", "ko"],
+    defaultLocale: "ko",
     domains: [
       {
         domain: "everstar-global-en.vercel.app",
-        defaultLocale: "en-US",
+        defaultLocale: "en",
       },
       {
         domain: "everstar-global-kr.vercel.app",
-        defaultLocale: "kr-KR",
+        defaultLocale: "ko",
       },
     ],
   },

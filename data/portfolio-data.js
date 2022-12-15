@@ -1,5 +1,5 @@
 export const portfolioData = {
-  "kr-KR": [
+  ko: [
     {
       title: "EVERSTAR",
       description:
@@ -17,7 +17,7 @@ export const portfolioData = {
       color: "rgb(42, 131, 190, 0.3)",
     },
   ],
-  "en-US": [
+  en: [
     {
       title: "EVERSTAR",
       description:
