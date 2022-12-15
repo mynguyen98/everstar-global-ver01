@@ -7,6 +7,7 @@ module.exports = {
   i18n: {
     locales: ["en", "ko"],
     defaultLocale: "ko",
+    localeDetection: false,
     domains: [
       {
         domain: "everstar-global-en.vercel.app",
