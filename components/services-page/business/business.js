@@ -9,7 +9,7 @@ import GamePublish from "./game-publish";
 import Marketing from "./marketing";
 import Blockchain from "./blockchain";
 
-import { useLangContext } from "../../store/lang-switch-context";
+import { useLangContext } from "../../../store/lang-switch-context";
 ////////////////////////////////////////////////////////
 export default function Business({ business, sid }) {
   const { currentLocale } = useLangContext();
