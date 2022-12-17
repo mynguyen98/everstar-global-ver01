@@ -1,17 +1,19 @@
-import LogoSymbol from '../icons/logo/logo-symbol'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import { footerBusinessContent } from '../../data/constant'
-import classes from './footer.module.css'
-import FooterContent from './footer-content'
+import LogoSymbol from "../icons/logo/logo-symbol";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import { footerBusinessContent } from "../../data/constant";
+import classes from "./footer.module.css";
+import FooterContent from "./footer-content";
+import { useLangContext } from "../../store/lang-switch-context";
 export default function MainFooter() {
-  const { locale } = useRouter()
-  const footerData = footerBusinessContent[locale]
-  const { company, services, contact } = footerData
+  const { currentLocale } = useLangContext();
+  const { locale } = useRouter();
+  const footerData = footerBusinessContent[currentLocale];
+  const { company, services, contact } = footerData;
   // console.log(locale)
   return (
     <section className={classes.section}>
-      <div className='section-center'>
+      <div className="section-center">
         <div className={classes.header}>
           <span>
             <LogoSymbol />
@@ -25,11 +27,11 @@ export default function MainFooter() {
         </div>
         <div className={classes.copyright}>
           <p>
-            © 2022 <span className={classes.highlight}>EVERSTAR GLOBAL</span>{' '}
+            © 2022 <span className={classes.highlight}>EVERSTAR GLOBAL</span>{" "}
             All rights reserved
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,20 +1,20 @@
-import DetailPort from './detail-port'
-import { useRouter } from 'next/router'
-import { portfolioData } from '../../data/portfolio-data'
-import Image from 'next/image'
+import DetailPort from "./detail-port";
+import { portfolioData } from "../../data/portfolio-data";
+import Image from "next/image";
 
-import classes from './index.module.css'
+import classes from "./index.module.css";
+import { useLangContext } from "../../store/lang-switch-context";
 export default function PortfolioDetail() {
-  const { locale } = useRouter()
-  const data = portfolioData[locale]
+  const { currentLocale } = useLangContext();
+  const data = portfolioData[currentLocale];
 
   return (
     <>
       <section className={classes.section}>
-        <h1 className='section-heading'>PORTFOLIO</h1>
+        <h1 className="section-heading">PORTFOLIO</h1>
       </section>
       <section className={classes.container}>
-        <div className='section-center'>
+        <div className="section-center">
           {data.map((item, index) => {
             return (
               <div className={classes.itemContainer} key={index}>
@@ -38,17 +38,17 @@ export default function PortfolioDetail() {
                   <div className={classes.image}>
                     <Image
                       src={item.image}
-                      alt='portfolio image'
+                      alt="portfolio image"
                       width={220}
                       height={420}
                     />
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </section>
     </>
-  )
+  );
 }

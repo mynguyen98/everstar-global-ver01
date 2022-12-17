@@ -3,10 +3,13 @@ import Link from "next/link";
 import Logo from "../icons/logo/logo-company";
 import classes from "./main-navigation.module.css";
 import IconChevronDown from "../icons/icons/icon-chevron-down";
-import { useRouter } from "next/router";
+import { useLangContext } from "../../store/lang-switch-context";
 function MainNavigation() {
-  const router = useRouter();
-  const { locale, asPath } = router;
+  console.log(useLangContext());
+  const { currentLocale, setToggleLocale } = useLangContext();
+  console.log(currentLocale);
+  // const router = useRouter();
+  // const { locale, asPath } = router;
   return (
     <nav className={classes.navContainer}>
       <div className={classes.navCenter}>
@@ -46,20 +49,26 @@ function MainNavigation() {
                 fontWeight: "500",
               }}
             >
-              {locale === "en" ? "EN" : "KR"}
+              {currentLocale === "en" ? "EN" : "KR"}
             </span>
             <IconChevronDown />
           </div>
           <ul className={classes.langList}>
             <li>
-              <Link href={asPath} locale="en" scroll={false}>
+              <div
+                onClick={() => setToggleLocale("en")}
+                style={{ cursor: "pointer" }}
+              >
                 EN
-              </Link>
+              </div>
             </li>
             <li>
-              <Link href={`${asPath}`} locale="ko" scroll={false}>
+              <div
+                onClick={() => setToggleLocale("ko")}
+                style={{ cursor: "pointer" }}
+              >
                 KR
-              </Link>
+              </div>
             </li>
           </ul>
         </div>
