@@ -10,16 +10,16 @@ module.exports = {
     localeDetection: false,
     domains: [
       {
-        // domain: "everstar-global-en.vercel.app",
-        domain: "everstar.en:3000",
+        domain: "everstar-global-en.vercel.app",
+        // domain: "everstar.en:3000",
         defaultLocale: "en",
-        http: true,
+        // http: true,
       },
       {
-        // domain: "everstar-global-kr.vercel.app",
-        domain: "everstar.kr:3000",
+        domain: "everstar-global-kr.vercel.app",
+        // domain: "everstar.kr:3000",
         defaultLocale: "ko",
-        http: true,
+        // http: true,
       },
     ],
   },
